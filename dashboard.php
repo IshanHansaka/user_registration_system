@@ -1,3 +1,24 @@
+<?php
+  session_start();
+  require("database.php");
+
+  $displayText1 = "Name";
+  $displayText2 = "ID";
+  /*
+  //GET data from URL
+
+  if (isset($_GET["id"])) {
+      $displayText2 = $_GET["id"];
+  }
+  if (isset($_GET["fname"])) {
+      $displayText1 = $_GET["fname"];
+  }
+  */
+
+  $displayText1 = $_SESSION["user_fname"];
+  $displayText2 = $_SESSION["user_id"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
