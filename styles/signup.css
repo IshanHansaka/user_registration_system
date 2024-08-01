@@ -3,7 +3,6 @@
 * {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-style: normal;
   box-sizing: border-box;
 }
 
@@ -13,22 +12,9 @@
   font-size: 20px;
   padding: 20px;
   letter-spacing: 2px;
-  box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 26px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-  margin: 15px 20px;
-  margin-bottom: 30px;
-}
-
-.left li a {
-  font-weight: bold;
-  color: #44115b;
-}
-
-a:hover {
-  text-decoration: underline;
-  text-decoration-color: #44115b;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 10px;
+  margin: 15px 20px 30px;
 }
 
 li {
@@ -36,57 +22,55 @@ li {
   display: inline;
 }
 
-li a {
+.left li a, li a {
+  font-weight: bold;
+  color: #44115b;
   text-decoration: none;
   padding: 30px 20px;
-  color: black;
+}
+
+a:hover {
+  text-decoration: underline #44115b 5px;
+  text-underline-offset: 10px;
 }
 
 .containerSignup {
   width: 60%;
   margin: 0 auto;
   display: flex;
-  height: 800px;
-  /* align-items: center; */
   flex-direction: column;
   justify-content: center;
-  box-shadow: 1px 1cap 26px 0px rgba(0, 0, 0, 0.75);
+  height: 800px;
+  box-shadow: 1px 1px 26px rgba(0, 0, 0, 0.75);
 }
+
 h1 {
   text-align: center;
   color: #44115b;
 }
-.fullname,
-.collection {
+
+.fullname, .collection {
   margin: 10px 50px;
   display: flex;
   justify-content: space-between;
 }
 
-.firstnameDiv,
-.lastnameDiv,
-.ageDiv,
-.genderDiv {
+.firstnameDiv, .lastnameDiv, .ageDiv, .genderDiv {
   width: 45%;
 }
 
-input,
-#selectGender {
+input, #selectGender {
   padding: 8px;
   width: 100%;
   margin: 10px 0;
   font-size: 15px;
 }
 
-.emailDiv,
-.contactNoDiv,
-.usernameDiv,
-.passwordDiv {
+.emailDiv, .contactNoDiv, .usernameDiv, .passwordDiv {
   margin: 10px 50px;
 }
 
 #submitSignup {
-  width: 300px;
   width: 30%;
   height: 40px;
   color: white;

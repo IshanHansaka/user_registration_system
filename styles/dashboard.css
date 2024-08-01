@@ -3,11 +3,8 @@
 * {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-style: normal;
   box-sizing: border-box;
 }
-
-/* --------------------NAVBAR----------------------------- */
 
 .navbar {
   display: flex;
@@ -15,22 +12,9 @@
   font-size: 20px;
   padding: 20px;
   letter-spacing: 2px;
-  box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 26px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-  margin: 15px 20px;
-  margin-bottom: 30px;
-}
-
-.left li a {
-  font-weight: bold;
-  color: #44115b;
-}
-
-a:hover {
-  text-decoration: underline;
-  text-decoration-color: #44115b;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 10px;
+  margin: 15px 20px 30px;
 }
 
 li {
@@ -38,21 +22,23 @@ li {
   display: inline;
 }
 
-li a {
+li a,
+.left li a {
+  font-weight: bold;
+  color: #44115b;
   text-decoration: none;
   padding: 30px 20px;
-  color: black;
 }
 
-/* -----------------------HERO----------------------------- */
+a:hover {
+  text-decoration: underline #44115b 5px;
+  text-underline-offset: 10px;
+}
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("./images/hero.jpg");
-
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("./images/hero.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 600px;
   display: flex;
   justify-content: center;
@@ -60,31 +46,22 @@ li a {
   width: 90%;
   margin: 0 auto;
 }
+
 .frame {
-  border: 3px white solid;
+  border: 3px solid white;
   border-radius: 10px;
   width: 80%;
   height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.content,
-.buttons {
   text-align: center;
-}
-
-.content {
-  /* background-color: green; */
   color: white;
   font-size: 25px;
 }
 
 .buttons {
-  /* background-color: purple; */
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -99,31 +76,30 @@ button {
 .leftBtn button {
   background: transparent;
   color: white;
-  border: solid white;
+  border: 1px solid white;
 }
 
 .leftBtn button:hover {
   background: white;
-  border: solid white 1px;
   color: black;
 }
 
-.rightBtn button  {
+.rightBtn button {
   background: white;
-  border: solid white 1px;
-}
-
-.rightBtn button a{
-  text-decoration: none;
   color: black;
+  border: 1px solid white;
 }
 
 .rightBtn button:hover {
   background: transparent;
   color: white;
-  border: solid white;
 }
 
-.rightBtn button a:hover{
+.rightBtn button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.rightBtn button:hover a {
   color: white;
 }
