@@ -8,9 +8,7 @@
     $connection = new mysqli($host, $username, $password, $database);
 
     //check connection established or not
-    if ($connection->connect_error) {
+    if ($connection->connect_error === true) {
         die("connection Error :".$connection->connect_error);
     }
-
-    echo "connected successfully";
 ?>
