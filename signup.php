@@ -57,7 +57,7 @@
         <div class="fullname">
           <div class="firstnameDiv">
             <label for="firstname">First Name: <br />
-              <input type="text" name="fname" id="firstname" placeholder="firstname" />
+              <input type="text" name="fname" id="firstname" placeholder="firstname" require/>
             </label>
           </div>
           <div class="lastnameDiv">
@@ -84,7 +84,7 @@
         </div>
         <div class="emailDiv">
           <label for="email">Email:<br />
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" require/>
           </label>
         </div>
         <div class="contactNoDiv">
@@ -94,12 +94,12 @@
         </div>
         <div class="usernameDiv">Username:
           <label for="username"><br />
-            <input type="text" name="username" id="username" placeholder="username" />
+            <input type="text" name="username" id="username" placeholder="username" require/>
           </label>
         </div>
         <div class="passwordDiv">
           <label for="password">Password:<br />
-            <input type="password" name="password" id="password" placeholder="password" />
+            <input type="password" name="password" id="password" placeholder="password" require/>
           </label>
           <div class="submitSignupDiv">
             <input type="submit" value="Sign up" id="submitSignup" name="signupbtn"/>
