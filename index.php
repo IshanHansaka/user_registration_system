@@ -13,8 +13,8 @@
           <li><a href="#">LOGO</a></li>
         </div>
         <div class="right">
-          <li><a href="/index.php">Login</a></li>
-          <li><a href="/signup.php">Sign up</a></li>
+          <li><a href="index.php">Login</a></li>
+          <li><a href="signup.php">Sign up</a></li>
         </div>
       </ul>
     </nav>
@@ -55,7 +55,7 @@
           </form>
           Don't have an account? then
           <span id="SignupSpan">
-            <a href="/signup.php" id="signupButton">Sign up</a>
+            <a href="signup.php" id="signupButton">Sign up</a>
           </span>
         </div>
       </div>
