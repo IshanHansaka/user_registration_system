@@ -34,7 +34,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="signup.css" />
-    <title>Document</title>
+    <title>Signup</title>
   </head>
   <body>
     <nav>
@@ -52,37 +52,28 @@
       <div class="title">
         <h1>Join with us!!</h1>
       </div>
-
+      <!---------Form-------------->
       <form action="" method="post">
         <div class="fullname">
           <div class="firstnameDiv">
-            <label for="firstname"
-              >First Name: <br />
-              <input
-                type="text"
-                name="fname"
-                id="firstname"
-                placeholder="firstname"
-              />
+            <label for="firstname">First Name: <br />
+              <input type="text" name="fname" id="firstname" placeholder="firstname" />
             </label>
           </div>
           <div class="lastnameDiv">
-            <label for="lastname"
-              >Last Name:<br />
+            <label for="lastname">Last Name:<br />
               <input type="text" name="lname" id="lastname" placeholder="lastname" />
             </label>
           </div>
         </div>
         <div class="collection">
           <div class="ageDiv">
-            <label for="age"
-              >Age:<br />
+            <label for="age">Age:<br />
               <input type="number" name="age" id="age" placeholder="age" />
             </label>
           </div>
           <div class="genderDiv">
-            <label for="gender">
-              Gender:<br />
+            <label for="gender">Gender:<br />
               <select name="gender" id="selectGender">
                 <option value="Male" selected>Male</option>
                 <option value="Female">Female</option>
@@ -92,40 +83,29 @@
           </div>
         </div>
         <div class="emailDiv">
-          <label for="email"
-            >Email:<br />
+          <label for="email">Email:<br />
             <input type="email" name="email" id="email" />
           </label>
         </div>
         <div class="contactNoDiv">
-          <label for="contactno"
-            >Contact Number:<br />
+          <label for="contactno">Contact Number:<br />
             <input type="text" name="contactno" id="contactno" />
           </label>
         </div>
-        <div class="usernameDiv">
-          Username:
-          <label for="username"
-            ><br />
+        <div class="usernameDiv">Username:
+          <label for="username"><br />
             <input type="text" name="username" id="username" placeholder="username" />
           </label>
         </div>
         <div class="passwordDiv">
-          <label for="password">
-            Password:<br />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="password"
-            />
+          <label for="password">Password:<br />
+            <input type="password" name="password" id="password" placeholder="password" />
           </label>
           <div class="submitSignupDiv">
             <input type="submit" value="Sign up" id="submitSignup" name="signupbtn"/>
           </div>
         </div>
       </form>
-
     </div>
   </body>
 </html>
