@@ -64,25 +64,18 @@
         <div class="contentLogin">
           <h1>Welcome Back!!</h1>
           <img src="" alt="" id="img" />
-
+          <!----------From------------->
           <form action="" method="post">
             <div class="name">
               <label for="name">
                 Username:
                 <br />
-                <input type="text" name="username" id="name" placeholder="Username" />
+                <input type="text" name="username" id="name" placeholder="Username" required/>
               </label>
             </div>
             <div class="passwordDiv">
-              <label for="password">
-                Password:
-                <br />
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Password"
-                />
+              <label for="password">Password:<br />
+                <input type="password" name="password" id="password" placeholder="Password" required/>
               </label>
             </div>
 
