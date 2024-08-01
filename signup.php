@@ -1,3 +1,9 @@
+<?php
+  require("database.php");
+
+  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,14 +28,15 @@
       <div class="title">
         <h1>Join with us!!</h1>
       </div>
-      <form action="" method="">
+
+      <form action="" method="post">
         <div class="fullname">
           <div class="firstnameDiv">
             <label for="firstname"
               >First Name: <br />
               <input
                 type="text"
-                name=""
+                name="fname"
                 id="firstname"
                 placeholder="firstname"
               />
@@ -38,7 +45,7 @@
           <div class="lastnameDiv">
             <label for="lastname"
               >Last Name:<br />
-              <input type="text" name="" id="lastname" placeholder="lastname" />
+              <input type="text" name="lname" id="lastname" placeholder="lastname" />
             </label>
           </div>
         </div>
@@ -46,16 +53,16 @@
           <div class="ageDiv">
             <label for="age"
               >Age:<br />
-              <input type="number" name="" id="age" placeholder="age" />
+              <input type="number" name="age" id="age" placeholder="age" />
             </label>
           </div>
           <div class="genderDiv">
             <label for="gender">
               Gender:<br />
               <select name="gender" id="selectGender">
-                <option value="" selected>Male</option>
-                <option value="">Female</option>
-                <option value="">Other</option>
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
               </select>
             </label>
           </div>
@@ -63,20 +70,20 @@
         <div class="emailDiv">
           <label for="email"
             >Email:<br />
-            <input type="email" name="" id="email" />
+            <input type="email" name="email" id="email" />
           </label>
         </div>
         <div class="contactNoDiv">
           <label for="contactno"
             >Contact Number:<br />
-            <input type="text" name="" id="contactno" />
+            <input type="text" name="contactno" id="contactno" />
           </label>
         </div>
         <div class="usernameDiv">
           Username:
           <label for="username"
             ><br />
-            <input type="text" name="" id="username" placeholder="username" />
+            <input type="text" name="username" id="username" placeholder="username" />
           </label>
         </div>
         <div class="passwordDiv">
@@ -84,7 +91,7 @@
             Password:<br />
             <input
               type="password"
-              name=""
+              name="password"
               id="password"
               placeholder="password"
             />
@@ -94,6 +101,7 @@
           </div>
         </div>
       </form>
+
     </div>
   </body>
 </html>
