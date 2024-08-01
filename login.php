@@ -57,9 +57,7 @@
       </ul>
     </nav>
     <div class="containerLogin">
-      <div class="leftLogin">
-        <img src="" alt="" />
-      </div>
+      <div class="leftLogin"></div>
       <div class="rightLogin">
         <div class="contentLogin">
           <h1>Welcome Back!!</h1>
