@@ -1,7 +1,31 @@
 <?php
+  //add database.php file
   require("database.php");
 
+  //check button is clicked
+  if (isset($_POST["signupbtn"])) {
+    echo "btn clicked";
+
+    $fname = $_POST["fname"];
+    $lname = $_POST["lname"];
+    $age = $_POST["age"];
+    $gender = $_POST["gender"];
+    $email = $_POST["email"];
+    $contactno = $_POST["contactno"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    //defind sql for insert a query
+    $sql = "INSERT INTO users (fname,lname,age,gender,email,contactno,username,password)VALUES('$fname','$lname',$age,'$gender','$email','$contactno','$username','$password');";
   
+    $result = $connection->query($sql);
+    
+    if ($result === true) {
+      echo "<script>alert('Data Added Successfully');location.replace('login.php');</script>";
+    } else {
+      echo "<script>alert('Data Added Faiiled');</script>";
+    }
+  }
 ?>
 
 <!DOCTYPE html>
@@ -97,7 +121,7 @@
             />
           </label>
           <div class="submitSignupDiv">
-            <input type="submit" value="Sign up" id="submitSignup" />
+            <input type="submit" value="Sign up" id="submitSignup" name="signupbtn"/>
           </div>
         </div>
       </form>
