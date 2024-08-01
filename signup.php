@@ -21,21 +21,21 @@
     $result = $connection->query($sql);
     
     if ($result === true) {
-      echo "<script>alert('Data Added Successfully');location.replace('login.php');</script>";
+      echo "<script>alert('Signup Successfully');location.replace('login.php');</script>";
     } else {
-      echo "<script>alert('Data Added Faiiled');</script>";
+      echo "<script>alert('Signup Added Faiiled');</script>";
     }
   }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="signup.css" />
-    <title>Signup</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="signup.css" />
+  <title>Signup</title>
+</head>
   <body>
     <nav>
       <ul class="navbar">
@@ -57,7 +57,7 @@
         <div class="fullname">
           <div class="firstnameDiv">
             <label for="firstname">First Name: <br />
-              <input type="text" name="fname" id="firstname" placeholder="firstname" require/>
+              <input type="text" name="fname" id="firstname" placeholder="firstname" required />
             </label>
           </div>
           <div class="lastnameDiv">
@@ -69,12 +69,12 @@
         <div class="collection">
           <div class="ageDiv">
             <label for="age">Age:<br />
-              <input type="number" name="age" id="age" placeholder="age" />
+              <input type="number" name="age" id="age" placeholder="age" min="1" />
             </label>
           </div>
           <div class="genderDiv">
             <label for="gender">Gender:<br />
-              <select name="gender" id="selectGender">
+              <select name="gender" id="selectGender" required>
                 <option value="Male" selected>Male</option>
                 <option value="Female">Female</option>
                 <option value="Other">Other</option>
@@ -84,22 +84,22 @@
         </div>
         <div class="emailDiv">
           <label for="email">Email:<br />
-            <input type="email" name="email" id="email" require/>
+            <input type="email" name="email" id="email" required />
           </label>
         </div>
         <div class="contactNoDiv">
           <label for="contactno">Contact Number:<br />
-            <input type="text" name="contactno" id="contactno" />
+            <input type="text" name="contactno" id="contactno"  required />
           </label>
         </div>
         <div class="usernameDiv">Username:
           <label for="username"><br />
-            <input type="text" name="username" id="username" placeholder="username" require/>
+            <input type="text" name="username" id="username" placeholder="username" required />
           </label>
         </div>
         <div class="passwordDiv">
           <label for="password">Password:<br />
-            <input type="password" name="password" id="password" placeholder="password" require/>
+            <input type="password" name="password" id="password" placeholder="password" required minlength="8" />
           </label>
           <div class="submitSignupDiv">
             <input type="submit" value="Sign up" id="submitSignup" name="signupbtn"/>
