@@ -31,8 +31,6 @@ a:hover {
   text-underline-offset: 10px;
 }
 
-.right {
-}
 li {
   list-style: none;
   display: inline;
@@ -56,8 +54,7 @@ li a {
 .leftLogin {
   height: 100%;
   width: 40%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("./images/loginImg.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
 }
 
 .rightLogin {
