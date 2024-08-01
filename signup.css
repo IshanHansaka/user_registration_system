@@ -7,8 +7,6 @@
   box-sizing: border-box;
 }
 
-/* --------------------NAVBAR----------------------------- */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -33,8 +31,6 @@ a:hover {
   text-underline-offset: 10px;
 }
 
-.right {
-}
 li {
   list-style: none;
   display: inline;
@@ -46,8 +42,6 @@ li a {
   color: black;
 }
 
-/* --------------------Signup--------------------------- */
-
 .containerSignup {
   width: 60%;
   margin: 0 auto;
@@ -57,7 +51,6 @@ li a {
   flex-direction: column;
   justify-content: center;
   box-shadow: 1px 1cap 26px 0px rgba(0, 0, 0, 0.75);
-
 }
 h1 {
   text-align: center;

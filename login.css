@@ -7,9 +7,6 @@
   box-sizing: border-box;
 }
 
-
-/* --------------------NAVBAR----------------------------- */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,88 +44,80 @@ li a {
   color: black;
 }
 
-/* --------------LOGIN PAGE---------------------- */
+.containerLogin {
+  height: 80vh;
+  width: 60%;
 
-.containerLogin{
-    height:80vh;
-    width: 60%;
-
-    display: flex;
-    margin:40px auto;
-    border: 1px solid black;
-    
-
+  display: flex;
+  margin: 40px auto;
+  border: 1px solid black;
 }
 
-.leftLogin{
-    height: 100%;
-    width: 40%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),url('./images/loginImg.png');
+.leftLogin {
+  height: 100%;
+  width: 40%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("./images/loginImg.png");
 }
 
-.rightLogin{
-    height: 100%;
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.rightLogin {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-label{
-    font-size: 30;
-
-}
-
-#name,#password{
-    padding: 10px;
-    width: 300px;
-    margin: 10px 0;
-    font-size: 15px;
+label {
+  font-size: 30;
 }
 
-.buttonsLogin{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px ;
-    margin-bottom: 30px;
-
+#name,
+#password {
+  padding: 10px;
+  width: 300px;
+  margin: 10px 0;
+  font-size: 15px;
 }
 
-#loginButton, #cancelButton{
-    width: 30%;
-    height: 40px;
-    color: white;
-    border: none;
-    letter-spacing: 2px;
-    opacity: 0.8;
-
+.buttonsLogin {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
-#loginButton{
-    background-color: #44115b;
+#loginButton,
+#cancelButton {
+  width: 30%;
+  height: 40px;
+  color: white;
+  border: none;
+  letter-spacing: 2px;
+  opacity: 0.8;
 }
 
-#cancelButton{
-    background-color: #670724;
+#loginButton {
+  background-color: #44115b;
 }
 
-#loginButton:hover, #cancelButton:hover{
-    opacity: 1;
+#cancelButton {
+  background-color: #670724;
 }
 
-
-
-
-#signupButton{
-    text-decoration: underline;
-    color: #44115b;
-    
+#loginButton:hover,
+#cancelButton:hover {
+  opacity: 1;
 }
 
-#signupButton:hover{
-    text-decoration: none;
+#signupButton {
+  text-decoration: underline;
+  color: #44115b;
+}
+
+#signupButton:hover {
+  text-decoration: none;
 }
