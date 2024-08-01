@@ -42,7 +42,7 @@
     <div class="hero">
       <div class="frame">
         <div class="content">
-          <h1>Welcome to <?php echo $displayText1;?></h1>
+          <h1>Welcome <?php echo $displayText1;?>!</h1>
           <h2>Your id : <?php echo $displayText2;?></h2>
         </div>
         <div class="buttons">
