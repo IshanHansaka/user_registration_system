@@ -36,13 +36,7 @@ CREATE TABLE users(
 
 INSERT INTO users (fname, lname, age, gender, email, contactno, username, password)
 VALUES
-('Ishan', 'Hansaka', 22, 'Male', 'ishan@gmail.com', '0775437008', 'ishan123', '1234');
-
-SELECT * FROM users WHERE username = "ishan123";
-
-INSERT INTO users (fname, lname, age, gender, email, contactno, username, password)
-VALUES
-('Ishan', 'Hansaka', 22, 'Male', 'ishan@gmail.com', '0775437008', 'ishan123', '1234');
+('Ishan', 'Hansaka', 22, 'Male', 'ishan@gmail.com', '0771234567', 'ishan123', '1234');
 
 SELECT * FROM users WHERE username = "ishan123";
 ```
